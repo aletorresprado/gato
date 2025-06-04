@@ -1,0 +1,34 @@
+@media (min-width: 768px){
+.container
+.header .container
+.header
+.menu-toggle
+.feactures . container
+.nav-list li
+.feacture .card
+.sidebar
+
+
+}
+
+@media (min-width: 1024px){
+    .container{
+        max-width: 960px;
+    }
+    .main .container{
+        display: grid;
+        grid-template-columns: repeat(3, ifr);
+        gap: 1rem;
+
+    }
+.feacture-card{
+    width: 100%;
+    margin-bottom: 0;
+
+}
+.sidebar{
+    grid-column: 2;
+    grid-row: 1 / span 2;
+
+}
+}

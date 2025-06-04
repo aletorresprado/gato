@@ -1,3 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
-
-@import "/css/variables.css";
+@import url(/css/adoptionForms.css);
+@import url(/css/estilomedia.css);
+@import url(/css/footer.css);
+@import url(/css/frecuentes.css);
+@import url(/css/general.css);
+@import url(/css/header.css);
+@import url(/css/loginForm.css);
+@import url(/css/main.css);
+@import url(/css/nosotros.css);
+@import url(/css/registerForm.css);
+@import url(/css/variables.css);

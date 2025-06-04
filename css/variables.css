@@ -1,0 +1,17 @@
+:root{
+    --tipografiaGeneral: 'Roboto';
+    --colorBotones: #194e86;
+    --colorHeaderFooter: #f5ac7b;
+    --colorBtnRegistro: #62a0e2;
+    --colorBackgroundCard: rgb(245, 172, 123, 10%);
+    --colorBordeCard: #ccc;
+    --colorCardDetails: #666;
+    --colorFormContainer: #ffe0db;
+    --colorFormBody: #665d5d;
+    --colorNavBarMenu: #194e86;
+    --colorTitulos: #194e86;
+    
+}
+:root {
+    --font-primary: 'Roboto', sans-serif;
+}

@@ -1,0 +1,95 @@
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: var(--colorHeaderFooter);
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 99;
+
+}
+nav{
+    width: 50%;
+
+}
+figure{
+    width: 50%;
+
+}
+
+/*.logo{
+    font-size: 1.5em;
+    font-weight: bold;
+    }
+*/
+
+.logo img{
+    width: 80px;
+}
+nav ul li {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li:last-child{
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    font-weight: bolder;
+    &:hover{
+        color:red
+    }
+}
+nav ul{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+nav ul li a {
+    color: white;
+    font-weight: bolder;
+    transition: all .3s ease;
+    &:hover{
+        color:#526581;
+    }
+}
+/*Menu hammburguesa*/
+.menu-icon{
+    display: none;
+    font-size:2em ;
+    cursor: pointer;
+}
+#menu-toggle{
+    display: none;
+}
+@media (max-width: 768px){
+    header{
+        flex-wrap: wrap;
+    }
+    figure{
+        width: 90%;
+    }
+
+nav ul{
+    flex-direction: column;
+    display: none;
+    width: 100%;
+   }
+nav ul li{
+    margin-left:0;
+    text-align: center;
+    padding: 10px 0;
+   }
+nav{
+    width: 100%;
+}
+#menu-toggle:checked + .menu-icon + nav ul {
+    display: flex;
+}
+.menu-icon{
+    display: block;
+    color: #194e86;
+    width: 10%;
+}
+}

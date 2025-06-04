@@ -1,0 +1,27 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+a{
+    text-decoration: none;
+
+}
+body{
+    width: 100%;
+    font-family:var(--font-primary);
+/* aca vamos a agregar fuente a utiolizar*/
+}
+h1{
+    font: 2em;
+    margin-bottom: 30px;
+    text-align: left;
+    color: var(--colorTitulos);
+}
+h2{
+    font-size: 1em;
+    margin-bottom: 30px;
+    text-align: left;
+    color: var(--colorTitulos)
+}
