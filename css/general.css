@@ -11,8 +11,15 @@ a{
 body{
     width: 100%;
     font-family:var(--font-primary);
-/* aca vamos a agregar fuente a utiolizar*/
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+/* aca vamos a agregar fuente a utilizar*/
 }
+.general-main{
+    flex-grow: 1;
+}
+
 h1{
     font: 2em;
     margin-bottom: 30px;
@@ -22,6 +29,13 @@ h1{
 h2{
     font-size: 1em;
     margin-bottom: 30px;
+    text-align: center;
+    color: var(--colorTitulos)
+}
+h3{
+    font-size: 1em;
+    margin-top: 20px;
+    margin-bottom: 20px;
     text-align: left;
     color: var(--colorTitulos)
 }

@@ -3,10 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registro</title>
+    <title>Formulario de Registro 👤</title>
     <link rel="stylesheet" href="/css/styles.css">
+    <link rel="shortcut icon" href="/img/favicon.png" type="image/x-icon">
+    <!--Fontawso-->
+    <script src="https://kit.fontawesome.com/d24c1dd2ca.js" crossorigin="anonymous"></script>
+    <!--AOS ANIMATE-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 </head>
-<body>
-    
+   
+<body class="form-body">
+    <div class="form-container">
+    <form class=" registrer-form">
+        <h1 class="registrer-form-title">Formulario de Registro <i class="fa-solid fa-user-plus"></i></h1>
+       
+            <div class="form-row">
+            <div class="form-group">
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre" required>
+            </div>
+                
+            <div class="form-group">
+                <label for="apellido">Apellido</label>
+                <input type="text" id="apellido" name="apellido" required>
+            </div>
+            </div>
+        
+            <div class="form-row">
+            <div class="form-group">
+                <label for="usuario">Nombre de Usuario</label>
+                <input type="text" id="usuario" name="usuario" required>
+            </div>
+
+            <div class="form-group">
+                <label for="edad">Edad</label>
+                <input type="date" id="fecha" name="fecha" required>
+            </div>
+            </div>
+        
+          <div class="form-row">   
+          <div class="form-group">
+                <label for="password">Contraseña</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+
+            <div class="form-group">
+                <label for="password">Repetir Contraseña</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            </div> 
+        <div class="form-row">   
+        <div class="form-group">
+                <button type="submit" class="image-button">Foto de Perfil <i class="fa-regular fa-image"></i></button>
+            </div>
+        </div>
+             
+        <div class="form-buttons">
+           <button type="submit" class="submit-button">Enviar</button>
+           <a href="/index.html" class="cancel-button">Cancelar</a>
+        </div>
+        
+           
+    </form>
+</div>
+
+ 
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init(); // Inicializa AOS
+</script>
 </body>
-</html>
+</html> 

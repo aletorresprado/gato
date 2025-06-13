@@ -3,10 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulario Adopcion</title>
+    <title>Formulario de Adopcion 🐱</title>
     <link rel="stylesheet" href="/css/styles.css">
+    <link rel="shortcut icon" href="/img/favicon.png" type="image/x-icon">
+    <!--Fontawso-->
+    <script src="https://kit.fontawesome.com/d24c1dd2ca.js" crossorigin="anonymous"></script>
+    <!--AOS ANIMATE-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 </head>
-<body>
-    
+   
+<body class="form-body">
+    <div class="form-container">
+    <form class=" adoption-form">
+        <h1 class="adoption-form-title">Formulario de Adopcion</h1>
+       
+            <div class="form-row">
+            <div class="form-group">
+                <label for="nombre-michi">Nombre del Michi</label>
+                <input type="text" id="nombre-michi" name="nombre-michi" required>
+            </div>
+                
+            <div class="form-group">
+                <label for="nombre-adoptante">Nombre del adoptante</label>
+                <input type="text" id="nombre-adoptante" name="nombre-adoptante" required>
+            </div>
+            </div>
+        
+            <div class="form-row">
+            <div class="form-group">
+                <label for="apellido-adoptante">Apellido del adoptante</label>
+                <input type="text" id="apellido-adoptante" name="apellido-adoptante" required>
+            </div>
+
+            <div class="form-group">
+                <label for="dni-adoptante">DNI adoptante</label>
+                <input type="number" id="dni-adoptante" name="dni-adoptante" required>
+            </div>
+            </div>
+        
+          <div class="form-row">   
+          <div class="form-group">
+                <label for="telefono">Telefono</label>
+                <input type="number" id="telefono" name="telefono" required>
+            </div>
+
+            <div class="form-group">
+                <label for="domicilio">Domicilio</label>
+                <input type="text" id="domicilio" name="domicilio" required>
+            </div>
+            </div> 
+        <div class="form-row">   
+        <div class="form-group">
+                <label for="razon">Por que queres adoptar a este michi?</label>
+                <textarea name="razon" id="razon" required></textarea>
+            </div>
+        </div>
+             
+        <div class="form-buttons">
+           <button type="submit" class="submit-button">Enviar</button>
+           <a href="/index.html" class="cancel-button">Cancelar</a>
+        </div>
+        
+           
+    </form>
+</div>
+
+ 
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init(); // Inicializa AOS
+</script>
 </body>
-</html>
+</html> 

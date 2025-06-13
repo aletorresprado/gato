@@ -1,20 +1,118 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nosotros</title>
+    <title>Nosotros 🐱</title>
     <link rel="stylesheet" href="/css/styles.css">
+    <link rel="shortcut icon" href="/img/favicon.png" type="image/x-icon">
+    <!--Fontawso-->
     <script src="https://kit.fontawesome.com/d24c1dd2ca.js" crossorigin="anonymous"></script>
+    <!--AOS ANIMATE-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 </head>
+
 <body>
+ <!--Header-->
+    <header>
+        <figure class="logo">
+            <img src="/img/logo-michi.png" alt="Logo de Adopta un Michi">
+            
+        </figure>
+
+        <!--Elementos para controla el menu-->
+        
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="menu-icon">
+            <i class="fa-solid fa-bars"></i></label>
+
+        <nav>
+            <ul>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/formularioAdopcion.html">Formulario de Adopción</a></li>
+                <li><a href="/nosotros.html">Nosotros</a></li>
+                <li><a href="/formularioRegistro.html">Registrarse</a></li>
+                <li><a href="/formularioLogin">Login</a></li>
+                <li><i id="logout" class="fa-solid fa-power-off"></i></li>
+            </ul>
+        </nav>
+
+    </header>
+<main class="container-nosotros">
+    
+    <!-- Sección de Bienvenida -->
+    <section class="intro">
+      <h1>¡Bienvenidos a la Galería de Michis!</h1>
+      <p>
+        En este espacio celebramos a nuestros amigos felinos que esperan una segunda oportunidad.
+        Cada imagen representa una historia de resiliencia, ternura y esperanza. Nuestro objetivo es
+        ayudar a estos maravillosos compañeros a encontrar un hogar amoroso. Acompañanos a conocerlos,
+        compartir su historia y formar parte del cambio que transforma sus vidas para siempre. Adoptar
+        un michi es un acto de amor que deja huella en la vida de todos.
+      </p>
+    </section>
+
+    <!-- Galería -->
+    <section class="gallery">
+      <h3>Conocé a nuestros adorables gatitos</h3>
+      <div class="image-grid">
+        <img src="img/gatitos/1.jpg" alt="Gatito 1">
+        <img src="img/gatitos/2.jpg" alt="Gatito 2">
+        <img src="img/gatitos/3.jpg" alt="Gatito 3">
+        <img src="img/gatitos/4.jpg" alt="Gatito 4">
+        <img src="img/gatitos/5.jpg" alt="Gatito 5">
+        <img src="img/gatitos/6.jpg" alt="Gatito 6">
+      </div>
+    </section>
+
+    <!-- Ubicación -->
+    <section class="ubicacion">
+      <h3>Dónde encontrarnos 📍</h3>
+      <div class="ubicacion-grid">
+        <div class="ubicacion-texto">
+          <p>
+            Podés visitarnos de lunes a sábado para conocer a los michis, colaborar con donaciones
+            o ser parte del voluntariado. Nos encontramos en un entorno verde y amigable, ideal para 
+            compartir momentos únicos con estos adorables compañeros.
+          </p>
+        </div>
+        <div class="ubicacion-mapa">
+          <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d14242.316156439074!2d-65.19394174366471!3d-26.821529412694158!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sar!4v1749850296845!5m2!1ses!2sar" 
+          width="100%" 
+          height="100%" 
+          style="border:0;" 
+          allowfullscreen="" 
+          loading="lazy" 
+          referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      </div>
+    </section>
+
+  </main>
+    
 
 
-
+<footer>
+    <div class="footer-links">
+        <a href="/FAQS.html">Preguntas Frecuentes</a>
+        <a href="https://api.whatsapp.com/send?phone=5493815975796" target="_blank"><img src="/img/icono.wtp2.png" alt="whatsapp" class="icon_contacto">Contactate con nosotros</a>
+        <div class="redes-sociales">
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+        </div>
+    </div>
+        <p>Comision web 15 - Todos los derechos reservados - 2025  - Alumno ATP</p>
+    
+</footer>
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script>
   AOS.init(); // Inicializa AOS
-</script>   
+</script>    
 </body>
-
 </html>
