@@ -3,10 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>Formulario de Login 👤</title>
     <link rel="stylesheet" href="/css/styles.css">
+    <link rel="shortcut icon" href="/img/favicon.png" type="image/x-icon">
+    <!--Fontawso-->
+    <script src="https://kit.fontawesome.com/d24c1dd2ca.js" crossorigin="anonymous"></script>
+    <!--AOS ANIMATE-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 </head>
-<body>
-    
+   
+<body class="form-body">
+    <div class="form-container">
+    <form class=" registrer-form">
+        <h1 class="registrer-form-title">Formulario de Login <i class="fa-solid fa-user-plus"></i></h1>
+       
+            <div class="form-row">
+             <div class="form-group">
+                <label for="usuario">Nombre de Usuario</label>
+                <input type="text" id="usuario" name="usuario" required placeholder="Ej: Usuario" autocomplete="usuario">
+            </div>                
+           
+            </div>
+                 
+        
+          <div class="form-row">   
+          <div class="form-group">
+                <label for="password">Contraseña</label>
+                <input type="password" id="password" name="password" required placeholder="●●●●●" autocomplete="Contraseña">
+            </div>
+
+            
+        </div>
+             
+        <div class="form-buttons">
+           <button type="submit" class="submit-button">Enviar</button>
+           <a href="/index.html" class="cancel-button">Cancelar</a>
+        </div>
+        
+           
+    </form>
+</div>
+
+ 
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init(); // Inicializa AOS
+</script>
 </body>
-</html>
+</html> 

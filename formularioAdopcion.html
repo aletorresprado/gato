@@ -14,57 +14,66 @@
 </head>
    
 <body class="form-body">
-    <div class="form-container">
-    <form class=" adoption-form">
-        <h1 class="adoption-form-title">Formulario de Adopcion</h1>
-       
-            <div class="form-row">
-            <div class="form-group">
-                <label for="nombre-michi">Nombre del Michi</label>
-                <input type="text" id="nombre-michi" name="nombre-michi" required>
-            </div>
-                
-            <div class="form-group">
-                <label for="nombre-adoptante">Nombre del adoptante</label>
-                <input type="text" id="nombre-adoptante" name="nombre-adoptante" required>
-            </div>
-            </div>
-        
-            <div class="form-row">
-            <div class="form-group">
-                <label for="apellido-adoptante">Apellido del adoptante</label>
-                <input type="text" id="apellido-adoptante" name="apellido-adoptante" required>
-            </div>
+   <div class="form-container">
+  <form class="adoption-form">
+    <h1 class="adoption-form-title">Formulario de Adopción</h1>
 
-            <div class="form-group">
-                <label for="dni-adoptante">DNI adoptante</label>
-                <input type="number" id="dni-adoptante" name="dni-adoptante" required>
-            </div>
-            </div>
-        
-          <div class="form-row">   
-          <div class="form-group">
-                <label for="telefono">Telefono</label>
-                <input type="number" id="telefono" name="telefono" required>
-            </div>
+    <div class="form-row">
+      <div class="form-group">
+        <label for="nombre-michi">Nombre del Michi</label>
+        <input type="text" id="nombre-michi" name="nombre-michi" required placeholder="Ej: Copito" autocomplete="off">
+      </div>
 
-            <div class="form-group">
-                <label for="domicilio">Domicilio</label>
-                <input type="text" id="domicilio" name="domicilio" required>
-            </div>
-            </div> 
-        <div class="form-row">   
-        <div class="form-group">
-                <label for="razon">Por que queres adoptar a este michi?</label>
-                <textarea name="razon" id="razon" required></textarea>
-            </div>
-        </div>
-             
-        <div class="form-buttons">
-           <button type="submit" class="submit-button">Enviar</button>
-           <a href="/index.html" class="cancel-button">Cancelar</a>
-        </div>
-        
+      <div class="form-group">
+        <label for="nombre-adoptante">Nombre del adoptante</label>
+        <input type="text" id="nombre-adoptante" name="nombre-adoptante" required placeholder="Ej: Nombre" autocomplete="given-name">
+      </div>
+    </div>
+
+    <div class="form-row">
+      <div class="form-group">
+        <label for="apellido-adoptante">Apellido del adoptante</label>
+        <input type="text" id="apellido-adoptante" name="apellido-adoptante" required placeholder="Ej: Apellido" autocomplete="family-name">
+      </div>
+
+      <div class="form-group">
+        <label for="dni-adoptante">DNI adoptante</label>
+        <input type="text" id="dni-adoptante" name="dni-adoptante"
+       required placeholder="Sin puntos (hasta 8 dígitos)"
+       inputmode="numeric" pattern="^[0-9]{1,8}$"
+       maxlength="8" autocomplete="off">
+      </div>
+    </div>
+
+    <div class="form-row">
+      <div class="form-group">
+        <label for="telefono">Teléfono</label>
+        <input type="text" id="telefono" name="telefono" required
+       placeholder="Ej: 3811234567"
+       inputmode="numeric" pattern="^[0-9]+$"
+       autocomplete="tel">
+      </div>
+
+      <div class="form-group">
+        <label for="domicilio">Domicilio</label>
+        <input type="text" id="domicilio" name="domicilio" required placeholder="Calle, número y ciudad" autocomplete="street-address">
+      </div>
+    </div>
+
+    <div class="form-row">
+      <div class="form-group">
+        <label for="razon">¿Por qué querés adoptar a este michi?</label>
+        <textarea name="razon" id="razon" required placeholder="Contanos un poco sobre tu motivación..." rows="4"></textarea>
+      </div>
+    </div>
+
+    <div class="form-buttons">
+      <button type="submit" class="submit-button">Enviar</button>
+      <a href="/index.html" class="cancel-button">Cancelar</a>
+    </div>
+  </form>
+</div>
+
            
     </form>
 </div>
